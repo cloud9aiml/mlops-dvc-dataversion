@@ -9,12 +9,19 @@ data = {
 df = pd.DataFrame(data)
 
 new_row_v2 = {
-    'Name':["Name4"],
-    'Age':[26],
-    'City':["KA"]
+    'Name':"Name4",
+    'Age':26,
+    'City':"KA"
 }
 
 df.loc[len(df.index)] =new_row_v2
+new_row_v3 = {
+    'Name':"Name5",
+    'Age':27,
+    'City':"AA"
+}
+
+df.loc[len(df.index)] =new_row_v3
 
 print(df.head())
 data_dir = 'data'
