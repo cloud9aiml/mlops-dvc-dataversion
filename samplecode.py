@@ -8,6 +8,14 @@ data = {
     }
 df = pd.DataFrame(data)
 
+new_row_v2 = {
+    'Name':["Name4"],
+    'Age':[26],
+    'City':["KA"]
+}
+
+df.loc[len(df.index)] =new_row_v2
+
 print(df.head())
 data_dir = 'data'
 os.makedirs(data_dir, exist_ok=True)
